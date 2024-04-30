@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>Bootstrap Text/Typography</title>
+    <style>a.menu_bootstrap_typography{font-weight:bold;}</style>
+    <style>
+#smallnavContainer {display:none;}
+</style> <meta name="viewport" content="width=device-width">
+    <meta name="Keywords" content="HTML,CSS,XML,JavaScript,DOM,jQuery,ASP.NET,PHP,SQL,colors,tutorial,programming,development,training,learning,quiz,primer,lessons,reference,examples,source code,demos,tips,color table,w3c,cascading style sheets,active server pages,Web building,Webmaster">
+    <meta name="Description" content="Free HTML CSS JavaScript DOM jQuery XML AJAX Angular ASP .NET PHP SQL tutorials, references, web building examples">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="http://www.w3schools.com/stdtheme.css">
+    <link rel="stylesheet" href="bs_reset.css">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="w3-fix.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div id="smallnavContainer">
+      <div id="smallnav">
+        <div id="menuDIV">
+          <hr>
+          <hr>
+          <hr></div>
+        <div id="closeSearchBTN" onclick="hideSearch()">X</div>
+        <a href="/default.asp"> </a></div>
+    </div>
+    <div id="belowTopnav" style="width:auto">
+      <div id="page" style="width:auto; padding:30px; margin:10px;">
+        <div>
+          <div id="main" style="width:auto">
+            <h1>Bootstrap <span class="color_h1">Text/Typography</span></h1>
+            <div class="chapter">
+                            <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="Bootstrap%20Grid%20-%20Small%20Devices.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="Bootstrap%20Tables.html">Next
+                  Chapter »</a> </div>
+            </div>
+            <hr>
+            <h2>Bootstrap's Default Settings</h2>
+            <p>Bootstrap 의 글로벌(global) 기본 font-size 는 16px 이며, line-height 는
+              1.5 이다.</p>
+            <p>기본 <code>font-family</code>는  "Helvetica Neue", Helvetica, Arial, sans-serif입니다..</p>
+            <p>또한, 모든 <code>&lt;p&gt;</code> 요소는  <code>margin-top: 0</code> 그리고 <code>margin-bottom: 1rem</code>(16px by default)를 가진다.</p>
+          
+            <hr>
+            <h2>&lt;h1&gt; - &lt;h6&gt;</h2>
+            <p>기본적으로 Bootstrap 은 HTML headings (<code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>)
+              을 다음과 같은 형식으로 스타일 한다.:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-white w3-padding notranslate fix">
+      <h1>h1 Bootstrap heading <span style="margin-left:10px;font-size:16px;font-weight:normal;color:#888">(2.5rem = 40px)</span></h1>
+      <h2>h2 Bootstrap heading <span style="margin-left:10px;font-size:16px;font-weight:normal;color:#888">(2rem = 32px)</span></h2>
+      <h3>h3 Bootstrap heading <span style="margin-left:10px;font-size:16px;font-weight:normal;color:#888">(1.75rem = 28px)</span></h3>
+      <h4>h4 Bootstrap heading <span style="margin-left:10px;font-size:16px;font-weight:normal;color:#888">(1.5rem = 24px)</span></h4>
+      <h5>h5 Bootstrap heading <span style="margin-left:10px;font-size:16px;font-weight:normal;color:#888">(1.25rem = 20px)</span></h5>
+      <h6>h6 Bootstrap heading <span style="margin-left:10px;font-size:16px;font-weight:normal;color:#888">(1rem = 16px)</span></h6>
+</div>
+<a target="_blank" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_txt_hn&stacked=h" class="w3-btn w3-margin-bottom w3-margin-top">Try it Yourself &raquo;</a></div>
+<hr>
+<h2>Display Headings</h2>
+<p>Display heading은 일반 제목보다 더 돋보입니다 (더 큰 그리고 더 얇은 글꼴)
+선택할 수 있는 4 가지 클래스가 있습니다.: <code class="w3-codespan">.display-1</code>, <code class="w3-codespan">.display-2</code>, <code class="w3-codespan">.display-3</code>, <code class="w3-codespan">.display-4</code></p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-white w3-padding notranslate">
+      <h1 class="display-1">Display 1</h1>
+      <h1 class="display-2">Display 2</h1>
+      <h1 class="display-3">Display 3</h1>
+      <h1 class="display-4">Display 4</h1>
+</div>
+<a target="_blank" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_txt_display&stacked=h" class="w3-btn w3-margin-bottom w3-margin-top">Try it Yourself &raquo;</a></div>
+<hr>
+            <h2>&lt;small&gt;</h2>
+            <p>Bootstrap 의 HTML <code>&lt;small&gt;</code> 요소는 모든 heading 에서 좀
+              더 밝은 보조(secondary ) 텍스트를 작성하는데 사용된다.:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate">
+                <h1>h1 heading <small>secondary text</small></h1>
+                <h2>h2 heading <small>secondary text</small></h2>
+                <h3>h3 heading <small>secondary text</small></h3>
+                <h4>h4 heading <small>secondary text</small></h4>
+                <h5>h5 heading <small>secondary text</small></h5>
+                <h6>h6 heading <small>secondary text</small></h6>
+              </div>
+              <a target="_blank" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_txt_small&amp;stacked=h"
+
+                class="w3-btn w3-margin-bottom">Try it Yourself »</a></div>
+            <br>
+            <hr>
+            <h2>&lt;mark&gt;</h2>
+            <p>Bootstrap 은 HTML <code>&lt;mark&gt;</code> 요소를 다음과 같은 방법으로
+              스타일한다:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate">
+                <p>Use the mark element to <mark style="background-color:#fcf8e3;padding:.2em;">highlight</mark>
+                  text.</p>
+              </div>
+              <a target="_blank" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_txt_mark&amp;stacked=h"
+
+                class="w3-btn w3-margin-bottom">Try it Yourself »</a></div>
+            <br>
+            <hr>
+            <h2>&lt;abbr&gt;</h2>
+            <p>Bootstrap 은 HTML <code>&lt;abbr&gt;</code> 요소를 다음과 같은 방법으로
+              스타일한다:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate">
+                <p>The <abbr title="World Health Organization">WHO</abbr> was
+                  founded in 1948.</p>
+              </div>
+              <a target="_blank" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_txt_abbr&amp;stacked=h"
+
+                class="w3-btn w3-margin-bottom">Try it Yourself »</a></div>
+            <br>
+            <hr>
+            <h2>&lt;blockquote&gt;</h2>
+            <p>Bootstrap 은 HTML <code>&lt;blockquote&gt;</code> 요소를 다음과 같은 방법으로
+              스타일한다:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate">
+                <blockquote class="blockquote">
+                  <p>For 50 years, WWF has been protecting the future of nature.
+                    The world's leading conservation organization, WWF works in
+                    100 countries and is supported by 1.2 million members in the
+                    United States and close to 5 million globally.</p>
+                  <footer class="blockquote-footer">From WWF's website</footer>
+                </blockquote>
+              </div>
+              <a target="_blank" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_txt_blockquote&amp;stacked=h"
+
+                class="w3-btn w3-margin-bottom">Try it Yourself »</a></div>
+            <hr>
+            <h2>&lt;dl&gt;</h2>
+            <p>Bootstrap 은 HTML <code>&lt;dl&gt;</code> 요소를 다음과 같은 방법으로 스타일한다:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate">
+                <dl>
+                  <dt>Coffee</dt>
+                  <dd>- black hot drink</dd>
+                  <dt>Milk</dt>
+                  <dd>- white cold drink</dd>
+                </dl>
+              </div>
+              <a target="_blank" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_txt_dl&amp;stacked=h"
+
+                class="w3-btn w3-margin-bottom">Try it Yourself »</a></div>
+            <br>
+            <hr>
+            <h2>&lt;code&gt;</h2>
+            <p>Bootstrap 은 HTML <code>&lt;code&gt;</code> 요소를 다음과 같은 방법으로
+              스타일한다:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate">
+                <p>The following HTML elements: <code>span</code>, <code>section</code>,
+                  and <code>div</code> defines a section in a document.</p>
+              </div>
+              <a target="_blank" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_txt_code&amp;stacked=h"
+
+                class="w3-btn w3-margin-bottom">Try it Yourself »</a></div>
+            <br>
+            <hr>
+            <h2>&lt;kbd&gt;</h2>
+            <p>Bootstrap 은 HTML <code>&lt;kbd&gt;</code> 요소를 다음과 같은 방법으로 스타일한다:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate">
+                <p>Use <kbd>ctrl + p</kbd> to open the Print dialog box.</p>
+              </div>
+              <a target="_blank" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_txt_kbd&amp;stacked=h"
+
+                class="w3-btn w3-margin-bottom">Try it Yourself »</a></div>
+            <br>
+            <hr>
+
+
+            <h2>&lt;pre&gt;</h2>
+            <p>Bootstrap 은 HTML <code>&lt;pre&gt;</code> 요소를 다음과 같은 방법으로 스타일한다:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+<div class="w3-white w3-padding notranslate fix">
+<pre>
+Text in a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks.
+</pre>
+</div>
+              <a target="_blank" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_txt_pre&amp;stacked=h"
+
+                class="w3-btn w3-margin-bottom">Try it Yourself »</a></div>
+            <br>
+            <hr>
+            <h2>Contextual Colors and Backgrounds</h2>
+            <p>Bootstrap 는 또한 "색을 통한 의미"를 재공하는 문맥(contextual) 클래스를 갖는다.</p>
+            <p>텍스트 컬러 클래스들:<code class="w3-codespan">.text-muted</code>, 
+<code class="w3-codespan">.text-primary</code>, <code class="w3-codespan">.text-success</code>, <code class="w3-codespan">.text-info</code>,
+<code class="w3-codespan">.text-warning</code>, <code class="w3-codespan">.text-danger</code>, <code class="w3-codespan">.text-secondary</code>, <code class="w3-codespan">.text-white</code>,
+<code class="w3-codespan">.text-dark</code>, <code class="w3-codespan">.text-body</code> (default body color/often black) and <code class="w3-codespan">.text-light</code>:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+<div class="w3-white w3-padding notranslate fix">
+<p class="text-muted" style="margin-bottom:8px">This text is muted.</p>
+<p class="text-primary" style="margin-bottom:8px">This text is important.</p>
+<p class="text-success" style="margin-bottom:8px">This text indicates success.</p>
+<p class="text-info" style="margin-bottom:8px">This text represents some information.</p>
+<p class="text-warning" style="margin-bottom:8px">This text represents a warning.</p>
+<p class="text-danger" style="margin-bottom:8px">This text represents danger.</p>
+<p class="text-secondary" style="margin-bottom:8px">Secondary text.</p>
+<p class="text-dark" style="margin-bottom:8px">Dark grey text.</p>
+<p class="text-body" style="margin-bottom:8px">Body text.</p>
+<p class="text-light">Light grey text.</p>
+</div>
+<a target="_blank" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_txt_colors&stacked=h" class="w3-btn w3-margin-bottom w3-margin-top">Try it Yourself &raquo;</a> </div>
+
+<p>hover 시에 좀 더 어두운 색의 Contextual 텍스트 클래스를 링크에 사용할 수도 있습니다.:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-white w3-padding notranslate fix">
+<a href="javascript:void(0)" class="text-muted linkborder">Muted link.</a>
+<a href="javascript:void(0)" class="text-primary linkborder">Primary link.</a>
+<a href="javascript:void(0)" class="text-success linkborder">Success link.</a>
+<a href="javascript:void(0)" class="text-info linkborder">Info link.</a>
+<a href="javascript:void(0)" class="text-warning linkborder">Warning link.</a>
+<a href="javascript:void(0)" class="text-danger linkborder">Danger link.</a>
+<a href="javascript:void(0)" class="text-secondary linkborder">Secondary link.</a>
+<a href="javascript:void(0)" class="text-dark linkborder">Dark grey link.</a>
+<a href="javascript:void(0)" class="text-body linkborder">Body/black link.</a>
+<a href="javascript:void(0)" class="text-light linkborder">Light grey link.</a>
+</div>
+<a target="_blank" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_txt_colors_links&stacked=h" class="w3-btn w3-margin-bottom w3-margin-top">Try it Yourself &raquo;</a>
+</div>
+
+<p><code class="w3-codespan">.text-black-50</code> or <code class="w3-codespan">.text-white-50</code> classes 를 사용하여 흑백 텍스트에 불투명도를 50% 추가 할 수도 있습니다.:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-white w3-padding notranslate fix">
+  <p class="text-black-50">Black text with 50% opacity on white background</p>
+  <p class="text-white-50 bg-dark">White text with 50% opacity on black background</p>
+</div>
+<a target="_blank" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_txt_colors_opacity&stacked=h" class="w3-btn w3-margin-bottom w3-margin-top">Try it Yourself &raquo;</a>
+</div>
+
+<hr>
+
+            <p>배경색의 클래스는:<code class="w3-codespan">.bg-primary</code>, <code class="w3-codespan">
+.bg-success</code>, <code class="w3-codespan">.bg-info</code>, <code class="w3-codespan">.bg-warning</code>, <code class="w3-codespan">.bg-danger</code>, <code class="w3-codespan">.bg-secondary</code>, <code class="w3-codespan">.bg-dark</code> and <code class="w3-codespan">.bg-light</code>.</p>
+<p>배경색은 텍스트 색을 설정하지 않으므로 경우에 따라 <code class="w3-codespan">.text-*</code> class 와 함께 사용하는 것이 좋습니다.</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+<div class="w3-white w3-padding notranslate fix">
+<p class="bg-primary text-white" style="margin-bottom:16px">This text is important.</p>
+<p class="bg-success text-white" style="margin-bottom:16px">This text indicates success.</p>
+<p class="bg-info text-white" style="margin-bottom:16px">This text represents some information.</p>
+<p class="bg-warning text-white" style="margin-bottom:16px">This text represents a warning.</p>
+<p class="bg-danger text-white" style="margin-bottom:16px">This text represents danger.</p>
+<p class="bg-secondary text-white" style="margin-bottom:16px">Secondary background color.</p>
+<p class="bg-dark text-white" style="margin-bottom:16px">Dark grey background color.</p>
+<p class="bg-light text-dark">Light grey background color.</p>
+</div>
+<a target="_blank" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_txt_bgcolors&stacked=h" class="w3-btn w3-margin-bottom w3-margin-top">Try it Yourself &raquo;</a></div>
+            <br>
+            <hr>
+<h2>More Typography Classes</h2>
+<p>The Bootstrap 4 classes below can be added to style HTML elements further:</p>
+<table class="w3-table-all notranslate">
+  <tr>
+    <th style="width:28%;">Class</th>
+    <th style="width:60%;">Description</th>
+    <th style="width:12%;">Example</th>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.font-weight-bold</code></td>
+    <td>Bold text</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_txt_font-weight&stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.font-weight-bolder</code></td>
+    <td>Bolder text</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_txt_font-weight&stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.font-italic</code></td>
+    <td>Italic text</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_txt_font-weight&stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.font-weight-light</code></td>
+    <td>Light weight text</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_txt_font-weight&stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.font-weight-lighter</code></td>
+    <td>Lighter weight text</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_txt_font-weight&stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.font-weight-normal</code></td>
+    <td>Normal text</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_txt_font-weight&stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.lead</code></td>
+    <td>Makes a paragraph stand out</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_txt_lead&stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.small</code></td>
+    <td>Indicates smaller text (set to 80% of the size of the parent)</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_txt_small&stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-left</code></td>
+    <td>Indicates left-aligned text</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_text-left&stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-*-left</code></td>
+    <td>Indicates left-aligned text on small, medium, large or xlarge screens</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_text-left-responsive&stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-break</code></td>
+    <td>Prevents long text from breaking layout</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_text-break">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-center</code></td>
+    <td>Indicates center-aligned text</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_text-left&stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-*-center</code></td>
+    <td>Indicates center-aligned text on small, medium, large or xlarge screens</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_text-center-responsive&stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-decoration-none</code></td>
+    <td>Removes the underline from a link</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_txt_decoration&stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-right</code></td>
+    <td>Indicates right-aligned text</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_text-left&stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-*-right</code></td>
+    <td>Indicates right-aligned text on small, medium, large or xlarge screens</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_text-right-responsive&stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-justify</code></td>
+    <td>Indicates justified text</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_text-left&stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-monospace</code></td>
+    <td>Monospaced text</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_text-monospace&stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-nowrap</code></td>
+    <td>Indicates no wrap text</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_text-left&stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-lowercase</code></td>
+    <td>Indicates lowercased text</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_text-lowercase&stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-reset</code></td>
+    <td>Resets the color of a text or a link (inherits the color from its parent)</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_txt_reset&stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-uppercase</code></td>
+    <td>Indicates uppercased text</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_text-lowercase&stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-capitalize</code></td>
+    <td>Indicates capitalized text</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_text-lowercase&stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.initialism</code></td>
+    <td>Displays the text inside an <code class="w3-codespan">&lt;abbr&gt;</code> element in a slightly smaller font size</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_txt_abbr2&stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.list-unstyled</code></td>
+    <td>Removes the default list-style and left margin on list items (works on both <code class="w3-codespan">&lt;ul&gt;</code> and <code class="w3-codespan">&lt;ol&gt;</code>). This class only applies to immediate children list items (to remove the default list-style from any nested lists, apply this class to any nested lists as well)</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_txt_list-unstyled&stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.list-inline</code></td>
+    <td>Places all list items on a single line (used together with 
+    <code class="w3-codespan">.list-inline-item</code> on each &lt;li&gt; elements)</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_txt_list-inline&stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.pre-scrollable</code></td>
+    <td>Makes a <code class="w3-codespan">&lt;pre&gt;</code> element scrollable</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_txt_pre&stacked=h">Try it</a></td>
+  </tr>
+</table>
+            <br>
+            <hr>
+            <h2>Complete Bootstrap Typography Reference</h2>
+            <p>Bootstrap 4에서 사용할 수있는 모든 CSS 클래스에 대한 자세한 내용은 <a href="https://www.w3schools.com/bootstrap4/bootstrap_ref_all_classes.asp">Bootstrap
+                Helper Classes Reference</a> 를 참고하시오.</p>
+            <br>
+            <div class="chapter">
+<div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="Bootstrap%20Grid%20-%20Small%20Devices.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="Bootstrap%20Tables.html">Next
+                  Chapter »</a> </div>
+            </div>
+            <hr> </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

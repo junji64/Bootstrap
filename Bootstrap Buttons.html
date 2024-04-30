@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>Bootstrap Buttons</title>
+    <style>a.menu_bootstrap_buttons{font-weight:bold;}</style>
+    <style>
+#smallnavContainer {display:none;}
+</style> <meta name="viewport" content="width=device-width">
+    <meta name="Keywords" content="HTML,CSS,XML,JavaScript,DOM,jQuery,ASP.NET,PHP,SQL,colors,tutorial,programming,development,training,learning,quiz,primer,lessons,reference,examples,source code,demos,tips,color table,w3c,cascading style sheets,active server pages,Web building,Webmaster">
+    <meta name="Description" content="Free HTML CSS JavaScript DOM jQuery XML AJAX Angular ASP .NET PHP SQL tutorials, references, web building examples">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://www.w3schools.com/stdtheme.css">
+    <link rel="stylesheet" href="bs_reset.css">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="/w3css/4/w3.css">
+<link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
+  </head>
+  <body>
+    <div id="smallnavContainer">
+      <div id="smallnav">
+        <div id="menuDIV">
+          <hr>
+          <hr>
+          <hr></div>
+        <div id="closeSearchBTN" onclick="hideSearch()">X</div>
+        <a href="/default.asp"> </a></div>
+    </div>
+    <div id="belowTopnav" style="width:auto">
+      <div id="page" style="width:auto; padding:30px; margin:10px;">
+        <div>
+          <div id="main" style="width:auto">
+            <h1>Bootstrap <span class="color_h1">Buttons</span></h1>
+            <div class="chapter">
+              <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="Bootstrap%20Jumbotron%20and%20Page%20Header.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="https://www.w3schools.com/bootstrap4/bootstrap_badges.asp"> Next Chapter »</a> </div>
+
+            </div>
+            <hr>
+            <h2>Button Styles</h2>
+
+<p> Bootstrap 은 다양한 스타일의 버튼을 제공합니다 : </p>
+<p>
+<button type="button" class="btn">Basic</button>
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-dark">Dark</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-link">Link</button>
+</p>
+
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;button type=&quot;button&quot; class=&quot;btn&quot;&gt;Basic&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;Secondary&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;Info&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;<br>
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-dark&quot;&gt;Dark&lt;/button&gt;<br>&lt;button 
+  type=&quot;button&quot; class=&quot;btn btn-light&quot;&gt;Light&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot;&gt;Link&lt;/button&gt;</div>
+<a target="_blank" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_button_styles&stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<p>버튼 클래스는 <code class="w3-codespan">&lt;a&gt;</code>, <code class="w3-codespan">&lt;button&gt;</code> 또는 <code class="w3-codespan">&lt;input&gt;</code> 요소에서 사용할 수 있습니다:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;a href=&quot;#&quot; class=&quot;btn btn-info&quot; role=&quot;button&quot;&gt;Link Button&lt;/a&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;Button&lt;/button&gt;<br>
+ &lt;input type=&quot;button&quot; class=&quot;btn btn-info&quot; value=&quot;Input Button&quot;&gt;<br>&lt;input type=&quot;submit&quot; class=&quot;btn btn-info&quot; value=&quot;Submit Button&quot;&gt;</div>
+<a target="_blank" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_button_elements&stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<div class="w3-panel w3-note">
+<p class="margin-bottom-add"><strong>링크의 href 속성에 #을 넣는 이유는 무엇입니까?<br></strong><br>
+링크 할 페이지가없고 &quot;404&quot; 메시지를받지 않기 위해 #을 링크로 지정합니다. 실제로는 "검색" 페이지의 실제 URL이어야 합니다.</p>
+</div>
+
+<hr>
+<h2>Button Outline</h2>
+<p>Bootstrap 4 는 8개의 아웃라인/테두리 버튼을 제공합니다.:</p>
+<p>
+<button type="button" class="btn btn-outline-primary">Primary</button>
+<button type="button" class="btn btn-outline-secondary">Secondary</button>
+<button type="button" class="btn btn-outline-success">Success</button>
+<button type="button" class="btn btn-outline-info">Info</button>
+<button type="button" class="btn btn-outline-warning">Warning</button>
+<button type="button" class="btn btn-outline-danger">Danger</button>
+<button type="button" class="btn btn-outline-dark">Dark</button>
+<button type="button" class="btn btn-outline-light text-dark">Light</button>
+</p>
+
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-primary&quot;&gt;Primary&lt;/button&gt;<br>
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary&quot;&gt;Secondary&lt;/button&gt;<br>
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-success&quot;&gt;Success&lt;/button&gt;<br>
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-info&quot;&gt;Info&lt;/button&gt;<br>&lt;button 
+  type=&quot;button&quot; class=&quot;btn btn-outline-warning&quot;&gt;Warning&lt;/button&gt;<br>&lt;button 
+  type=&quot;button&quot; class=&quot;btn btn-outline-danger&quot;&gt;Danger&lt;/button&gt;<br>
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-dark&quot;&gt;Dark&lt;/button&gt;<br>&lt;button 
+  type=&quot;button&quot; class=&quot;btn btn-outline-light text-dark&quot;&gt;Light&lt;/button&gt;<br></div>
+<a target="_blank" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_button_outline&stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Button Sizes</h2>
+<p>큰 버튼에는 <code class="w3-codespan">.btn-lg</code> 클래스를 사용하고 작은 버튼에는 <code class="w3-codespan">.btn-sm</code> 클래스를 사용하십시오.:</p>
+<p>
+<button type="button" class="btn btn-primary btn-lg">Large</button>
+<button type="button" class="btn btn-primary">Default</button>
+<button type="button" class="btn btn-primary btn-sm">Small</button>
+</p>
+
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;Large&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Default&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;Small&lt;/button&gt;<br></div>
+<a target="_blank" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_button_sizes&stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Block Level Buttons</h2>
+<p><code class="w3-codespan">.btn-block</code> 클래스를 추가하여 부모 요소의 전체 너비에 걸쳐있는 블록 수준 버튼을 만듭니다.</p>
+<div style="margin-bottom:13px;">
+    <button type="button" class="btn btn-primary btn-block">Full-Width Button</button>
+</div>
+
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-block&quot;&gt;Full-Width 
+  Button&lt;/button&gt;</div>
+<a target="_blank" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_button_block&stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Active/Disabled Buttons</h2>
+<p>버튼을 활성(누른 상태로 표시) 또는 비활성화(클릭할 수 없는) 상태로 설정할 수 있습니다:</p>
+<p>
+<button type="button" class="btn btn-primary active">Active Primary</button>
+<button type="button" class="btn btn-primary disabled" disabled>Disabled Primary</button>
+</p>
+<p><code class="w3-codespan">.active</code> 클래스는 버튼을 누른 것처럼 보이게 하고 <code class="w3-codespan">disabled</code> 속성은 버튼을 클릭 할 수 없게 만듭니다. &lt;a&gt; 요소는 disabled 속성을 지원하지 않으므로 <code class="w3-codespan">.disabled</code> 클래스를 사용하여 시각적으로 비활성화 된 것으로 표시해야합니다.
+</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;button type=&quot;button&quot; class=&quot;btn btn-primary active&quot;&gt;Active Primary&lt;/button&gt;<br>
+ &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&nbsp;disabled&gt;Disabled Primary&lt;/button&gt;<br>&lt;a href=&quot;#&quot; class=&quot;btn btn-primary 
+  disabled&quot;&gt;Disabled Link&lt;/a&gt;</div>
+<a target="_blank" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_button_active&stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+
+<h2>Spinner Buttons</h2>
+<p>버튼에 "스피너"를 추가 할 수도 있습니다. <a href="http://www.w3schools.com/bootstrap4/bootstrap_spinners.asp">BS4 Spinners Tutorial</a>에서 자세히 알아볼 수 있습니다.:</p>
+<div class="w3-section">
+<button class="btn btn-primary">
+  <span class="spinner-border spinner-border-sm"></span>
+</button>
+
+<button class="btn btn-primary">
+  <span class="spinner-border spinner-border-sm"></span>
+  Loading..
+</button>
+<button class="btn btn-primary" disabled>
+  <span class="spinner-border spinner-border-sm"></span>
+  Loading..
+</button>
+  <button class="btn btn-primary" disabled>
+    <span class="spinner-grow spinner-grow-sm"></span>
+    Loading..
+  </button>
+</div>
+<div class="w3-example">
+ <h3>Example</h3>
+  <div class="w3-code notranslate htmlHigh">
+    &lt;button class=&quot;btn btn-primary&quot;&gt;<br>&nbsp; &lt;span class=&quot;spinner-border 
+    spinner-border-sm&quot;&gt;&lt;/span&gt;<br>&lt;/button&gt;<br><br>&lt;button class=&quot;btn 
+    btn-primary&quot;&gt;<br>&nbsp; &lt;span class=&quot;spinner-border 
+    spinner-border-sm&quot;&gt;&lt;/span&gt;<br>&nbsp; Loading..<br>&lt;/button&gt;<br><br>&lt;button 
+    class=&quot;btn btn-primary&quot; disabled&gt;<br>&nbsp; &lt;span class=&quot;spinner-border 
+    spinner-border-sm&quot;&gt;&lt;/span&gt;<br>&nbsp; Loading..<br>&lt;/button&gt;<br>
+    <br>&lt;button class=&quot;btn btn-primary&quot; disabled&gt;<br>&nbsp; &lt;span 
+    class=&quot;spinner-grow spinner-grow-sm&quot;&gt;&lt;/span&gt;<br>&nbsp; Loading..<br>
+    &lt;/button&gt;<br></div>
+<a target="_blank" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_spinners_buttons&stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+
+            <hr>
+            <h2>Button Groups</h2>
+            <p>부트스트랩(Bootstrap)은 일련의 버튼들을 버튼 그룹(button group)에 함께 그룹지을 수 있게 합니다.
+              :</p>
+            <p> </p>
+            <div class="btn-group"> <button type="button" class="btn btn-primary">Apple</button>
+              <button type="button" class="btn btn-primary">Samsung</button> <button
+
+                type="button" class="btn btn-primary">Sony</button> </div>
+            <p>버튼 그룹의 생성은 <code>.btn-group</code> 클래스와 함께 <code>&lt;div&gt;</code>
+              요소를 사용합니다. :</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                  class="highELE">div</span> <span class="highATT">class=</span><span
+
+                  class="highVAL">"btn-group"</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">button</span>
+                <span class="highATT">type=</span><span class="highVAL">"button"</span>
+                <span class="highATT">class=</span><span class="highVAL">"btn
+                  btn-primary"</span><span class="highGT">&gt;</span>Apple<span
+
+                  class="highLT">&lt;</span><span class="highELE">/button</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">button</span>
+                <span class="highATT">type=</span><span class="highVAL">"button"</span>
+                <span class="highATT">class=</span><span class="highVAL">"btn
+                  btn-primary"</span><span class="highGT">&gt;</span>Samsung<span
+
+                  class="highLT">&lt;</span><span class="highELE">/button</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">button</span>
+                <span class="highATT">type=</span><span class="highVAL">"button"</span>
+                <span class="highATT">class=</span><span class="highVAL">"btn
+                  btn-primary"</span><span class="highGT">&gt;</span>Sony<span class="highLT">&lt;</span><span
+
+                  class="highELE">/button</span><span class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/div</span><span
+
+                  class="highGT">&gt;</span></div>
+              <a target="_blank" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_button_group&amp;stacked=h"
+
+                class="w3-btn w3-margin-bottom">Try it Yourself »</a> </div>
+            <p><strong>Tip:</strong> 그룹의 모든 버튼에 버튼 크기를 적용하는 대신에, 그룹의 모든 버튼의 크기로
+              <code>.btn-group-*</code> 클래스를 사용한다.:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                  class="highELE">div</span> <span class="highATT">class=</span><span
+
+                  class="highVAL">"btn-group btn-group-lg"</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">button</span>
+                <span class="highATT">type=</span><span class="highVAL">"button"</span>
+                <span class="highATT">class=</span><span class="highVAL">"btn
+                  btn-primary"</span><span class="highGT">&gt;</span>Apple<span
+
+                  class="highLT">&lt;</span><span class="highELE">/button</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">button</span>
+                <span class="highATT">type=</span><span class="highVAL">"button"</span>
+                <span class="highATT">class=</span><span class="highVAL">"btn
+                  btn-primary"</span><span class="highGT">&gt;</span>Samsung<span
+
+                  class="highLT">&lt;</span><span class="highELE">/button</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">button</span>
+                <span class="highATT">type=</span><span class="highVAL">"button"</span>
+                <span class="highATT">class=</span><span class="highVAL">"btn
+                  btn-primary"</span><span class="highGT">&gt;</span>Sony<span class="highLT">&lt;</span><span
+
+                  class="highELE">/button</span><span class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/div</span><span
+
+                  class="highGT">&gt;</span></div>
+              <a target="_blank" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_button_group_size&amp;stacked=h"
+
+                class="w3-btn w3-margin-bottom">Try it Yourself »</a> </div>
+            <br>
+            <hr>
+            <h2>Vertical Button Groups</h2>
+            <p>Bootstrap 은 수직 버튼 그룹도 제공한다.:</p>
+            <p> </p>
+            <div class="btn-group-vertical"> <button type="button" class="btn btn-primary">Apple</button>
+              <button type="button" class="btn btn-primary">Samsung</button> <button
+
+                type="button" class="btn btn-primary">Sony</button> </div>
+            <p>수직버튼그룹(vertical button group) 생성을 위해서는 <code>.btn-group-vertical</code>
+              클래스를 사용한다. :</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                  class="highELE">div</span> <span class="highATT">class=</span><span
+
+                  class="highVAL">"btn-group-vertical"</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">button</span>
+                <span class="highATT">type=</span><span class="highVAL">"button"</span>
+                <span class="highATT">class=</span><span class="highVAL">"btn
+                  btn-primary"</span><span class="highGT">&gt;</span>Apple<span
+
+                  class="highLT">&lt;</span><span class="highELE">/button</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">button</span>
+                <span class="highATT">type=</span><span class="highVAL">"button"</span>
+                <span class="highATT">class=</span><span class="highVAL">"btn
+                  btn-primary"</span><span class="highGT">&gt;</span>Samsung<span
+
+                  class="highLT">&lt;</span><span class="highELE">/button</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">button</span>
+                <span class="highATT">type=</span><span class="highVAL">"button"</span>
+                <span class="highATT">class=</span><span class="highVAL">"btn
+                  btn-primary"</span><span class="highGT">&gt;</span>Sony<span class="highLT">&lt;</span><span
+
+                  class="highELE">/button</span><span class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/div</span><span
+
+                  class="highGT">&gt;</span></div>
+              <a target="_blank" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_button_group_v&amp;stacked=h"
+
+                class="w3-btn w3-margin-bottom">Try it Yourself »</a> </div>
+            <br>
+            <hr>
+            <h2>Nesting Button Groups &amp; Dropdown Menus</h2>
+  <div class="btn-group" style="margin-bottom:16px">
+    <button type="button" class="btn btn-primary">Apple</button>
+    <button type="button" class="btn btn-primary">Samsung</button>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Sony
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Tablet</a>
+        <a class="dropdown-item" href="#">Smartphone</a>
+      </div>
+    </div>
+  </div>
+<p>N중첩된 버튼 그룹을 사용하면 드롭다운 메뉴(drop down menus)를 생성한다.:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;btn-group&quot;&gt;<br>&nbsp; &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Apple&lt;/button&gt;<br>&nbsp; &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Samsung&lt;/button&gt;<br>
+  &nbsp; &lt;div class=&quot;btn-group&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;button type=&quot;button&quot; class=&quot;btn 
+  btn-primary dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  Sony<br>&nbsp;&nbsp;&nbsp; &lt;/button&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div 
+  class=&quot;dropdown-menu&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a 
+  class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Tablet&lt;/a&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a 
+  class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Smartphone&lt;/a&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; 
+  &lt;/div&gt;<br>&lt;/div&gt;</div>
+<a target="_blank" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_button_group_dropdown&stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+            <hr>
+ 
+
+            <div class="chapter">
+<div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="Bootstrap%20Jumbotron%20and%20Page%20Header.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="https://www.w3schools.com/bootstrap4/bootstrap_badges.asp"> Next Chapter »</a> </div>
+            </div>
+            <hr> </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

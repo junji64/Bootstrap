@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>Bootstrap Grid System</title>
+    <style>a.menu_bootstrap_grid_system{font-weight:bold;}</style>
+    <style>
+#smallnavContainer {display:none;}
+</style> <meta name="viewport" content="width=device-width">
+    <meta name="Keywords" content="HTML,CSS,XML,JavaScript,DOM,jQuery,ASP.NET,PHP,SQL,colors,tutorial,programming,development,training,learning,quiz,primer,lessons,reference,examples,source code,demos,tips,color table,w3c,cascading style sheets,active server pages,Web building,Webmaster">
+    <meta name="Description" content="Free HTML CSS JavaScript DOM jQuery XML AJAX Angular ASP .NET PHP SQL tutorials, references, web building examples">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://www.w3schools.com/stdtheme.css">
+    <link rel="stylesheet" href="bs_reset.css">
+    <link rel="stylesheet" href="w3.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+table.grid {
+    width:100%;
+    border:none;
+    background-color:#F6F4F0;
+    padding:0px;    
+}
+table.grid tr {
+    text-align:center;
+}
+table.grid td {
+    border:4px solid white;
+    padding:6px;	    
+}
+</style> 
+<link rel="stylesheet" href="w3-fix.css">
+<style>
+table.grid {
+    width:100%;
+    border:none;
+    background-color:#f1f1f1;
+    padding:0px;    
+}
+table.grid tr {
+    text-align:center;
+}
+table.grid td {
+    border:4px solid white;
+    padding:8px;     
+}
+.test [class*="col-"] {
+  padding: 15px;
+  background-color: #f1f1f1;
+  border: 1px solid #D8D8D8;
+}
+.topnav .w3-bar a[href^="/bootstrap/bootstrap_ver.asp"] {
+  background-color: #4CAF50 !important;
+}
+</style>
+</head>
+  <body>
+    <div id="smallnavContainer">
+      <div id="smallnav">
+        <div id="menuDIV">
+          <hr>
+          <hr>
+          <hr></div>
+        <div id="closeSearchBTN" onclick="hideSearch()">X</div>
+        <a href="/default.asp"> </a></div>
+    </div>
+    <div id="belowTopnav" style="width:auto">
+      <div id="page" style="width:auto; padding:30px; margin:10px;">
+        <div>
+          <div id="main" style="width:auto">
+            <h1>Bootstrap <span class="color_h1">Grid System</span></h1>
+            <div class="chapter">
+              <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="Bootstrap%20Get%20Started.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="Bootstrap%20Grid%20-%20Small%20Devices.html">Next
+                  Chapter »</a> </div>
+            </div>
+            <hr>
+            <h2>Bootstrap Grid System</h2>
+            <p>Bootstrap 의&nbsp; grid system 은 한 페이지에 12 열(columns) 까지
+              허용한다.&nbsp;</p>
+            <p>모든 12 열(column) 각각을 사용하지 않으려면, 더 넓은 열을 만들기 위해서 열들을 그룹질 수 있다.:</p>
+            <table class="table grid" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td>span 1</td>
+                  <td>span 1</td>
+                  <td>span 1</td>
+                  <td>span 1</td>
+                  <td>span 1</td>
+                  <td>span 1</td>
+                  <td>span 1</td>
+                  <td>span 1</td>
+                  <td>span 1</td>
+                  <td>span 1</td>
+                  <td>span 1</td>
+                  <td>span 1</td>
+                </tr>
+                <tr>
+                  <td colspan="4">&nbsp;span 4</td>
+                  <td colspan="4">&nbsp;span 4</td>
+                  <td colspan="4">&nbsp;span 4</td>
+                </tr>
+                <tr>
+                  <td colspan="4">span 4</td>
+                  <td colspan="8">span 8</td>
+                </tr>
+                <tr>
+                  <td colspan="6">span 6</td>
+                  <td colspan="6">span 6</td>
+                </tr>
+                <tr>
+                  <td colspan="12">span 12</td>
+                </tr>
+              </tbody>
+            </table>
+            <p><br>
+            </p>
+            <p> 그리드 시스템은 반응형이며 화면 크기에 따라 열이 자동으로 다시 정렬됩니다. 합계가 최대 12 이하 인지 확인하십시오 (사용 가능한 12 개의 열을 모두 사용할 필요는 없음)</p>
+            <hr>
+            <h2>Grid Classes</h2>
+            <p>Bootstrap 4 grid system 에는 5 가지 클레스가 있다 : 
+              <ul>
+  <li><code class="w3-codespan">.col-</code> (초소형 기기-화면 너비가 576px 미만)</li>
+  <li><code class="w3-codespan">.col-sm-</code> (작은 기기-화면 너비가 576px 이상)</li>
+  <li><code class="w3-codespan">.col-md-</code> (중간 기기-화면 너비가 768px 이상)</li>
+  <li><code class="w3-codespan">.col-lg-</code> (대형 기기-화면 너비가 992px 이상)</li>
+  <li><code class="w3-codespan">.col-xl-</code> (초대형 기기-화면 너비가 1200px 이상)</li>
+</ul>
+            <p>위의 클래스를 결합하여보다 역동적이고 유연한 레이아웃을 만들 수 있습니다. </p>
+            <p><strong>Tip:</strong> 각 클래스는 확장(scales up)이 된다. 따라서, sm 과 md에 대하여
+              같은 폭을 지정하고 싶다면,&nbsp; sm 만을 지정하면 된다. </p>
+            <hr>
+            <h2>Grid System Rules</h2>
+            <p>일부 Bootstrap grid system 규칙:</p>
+            <ul>
+              <li>행들(rows)은 적절한 정렬과 패딩을 위해서&nbsp; <code>.container</code>
+                (fixed-width) 나 <code>.container-fluid</code> (full-width) 내에
+                놓여야 한다. </li>
+              <li>열들(columns)의 수평적 그룹을 만들려면 행(rows)을 사용한다. </li>
+              <li>콘텐츠(content)는 열(columns) 안에 놓여야 하고, 열(columns)들 만이 행(rows)의
+                직접적 자녀(immediate children)가 될 수 있다.&nbsp; </li>
+              <li><code>.row</code> 과 <code>.col-sm-4</code> 같은 미리 정의된 클레스들이 빠른
+                그리드 레이아웃 생성에 사용할 수 있다.&nbsp;</li>
+              <li>열(column)들은 padding 을 통해 홈통(gutters : gaps between column
+                content) 을 만들 수 있다. 이 패딩(padding)은&nbsp; <code>.rows</code> 에
+                대해서 음수 마진(negative margin)으로 첫 과 마지막 열에 대해 오프셋이 된다.<code></code></li>
+              <li>그리드 열(Grid columns)은 사용가능한 12 열 중에서 당신이 스팬(span)하고자 하는 수를
+                지정함으로 생성됩니다. 예를 들어, 세 개의 같은 열은 세 개의 <code>.col-sm-4</code> 을
+                사용한다.&nbsp;<code></code></li>
+            </ul>
+            <hr>
+            <h2>Basic Structure of a Bootstrap Grid</h2>
+            <p>다음은 Bootstrap grid의 기본 구조이다:</p>
+            <div class="w3-example">
+ <div class="w3-code notranslate htmlHigh">
+   &lt;!-- Control the column width, and how they should appear on different 
+   devices --&gt;<br>&lt;div class=&quot;row&quot;&gt;<br>&nbsp; &lt;div class=&quot;col-*-*&quot;&gt;&lt;/div&gt;<br>&nbsp; 
+   &lt;div class=&quot;col-*-*&quot;&gt;&lt;/div&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;row&quot;&gt;<br>&nbsp; &lt;div class=&quot;col-*-*&quot;&gt;&lt;/div&gt;<br>&nbsp; &lt;div class=&quot;col-*-*&quot;&gt;&lt;/div&gt;<br>&nbsp; &lt;div class=&quot;col-*-*&quot;&gt;&lt;/div&gt;<br>&lt;/div&gt;<br>
+   <br>&lt;!-- Or let Bootstrap automatically handle the layout --&gt;<br>&lt;div class=&quot;row&quot;&gt;<br>&nbsp; &lt;div class=&quot;col&quot;&gt;&lt;/div&gt;<br>&nbsp; &lt;div class=&quot;col&quot;&gt;&lt;/div&gt;<br>&nbsp; &lt;div class=&quot;col&quot;&gt;&lt;/div&gt;<br>&lt;/div&gt;</div>
+</div>
+            <p>첫 번째 예제 : 행을 만듭니다 (<code>&lt;div class="row"&gt;</code>). 그런 다음 원하는 수의 열 (적절한 <code>.col-*-*</code> 클래스가 있는 태그)을 추가하십시오. 첫 번째 별표(*)는 응답성을 나타냅니다(sm, md, lg 또는 xl). 두 번째 별표는 숫자를 나타내며 각 행에서 그 합이 12 여야 합니다.
+            </p>
+            <p>
+              두 번째 예제 : 각 열에 숫자를 추가하는 대신 부트스트랩이 레이아웃을 처리하여 동일한 너비 열을 만듭니다. 두 개의 "col" 요소 = 각 열에 50 % 너비. 세 개의 "col" 요소 = 각 열에 33.33 % 너비. 4 cols = 25 % 너비 등..  <code>.col-sm | md | lg | xl</code>을 사용하여 열을 반응형으로 만들 수도 있습니다.
+            </p>
+            <p>
+              아래에서는 기본 Bootstrap 그리드 레이아웃의 예를 모았습니다.
+            </p>
+            <hr>
+<h2>Three Equal Columns</h2>
+<div class="container-fluid" style="margin:8px 0 15px 0;">
+<div class="row test">
+  <div class="col-sm-4">.col</div>
+  <div class="col-sm-4">.col</div>
+  <div class="col-sm-4">.col</div>
+</div>
+</div>
+<p>The following example shows how to create three equal-width columns, on all 
+devices and screen widths:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;row&quot;&gt;<br>&nbsp; &lt;div class=&quot;col&quot;&gt;.col&lt;/div&gt;<br>&nbsp; &lt;div class=&quot;col&quot;&gt;.col&lt;/div&gt;<br>&nbsp; &lt;div class=&quot;col&quot;&gt;.col&lt;/div&gt;<br>&lt;/div&gt;</div>
+<a target="_blank" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_grid_ex&stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Responsive Columns</h2>
+<div class="container-fluid" style="margin:8px 0 15px 0;">
+<div class="row test">
+  <div class="col-sm-3">.col-sm-3</div>
+  <div class="col-sm-3">.col-sm-3</div>
+  <div class="col-sm-3">.col-sm-3</div>
+  <div class="col-sm-3">.col-sm-3</div>
+</div>
+</div>
+<p>The following example shows how to create four equal-width columns starting at tablets and scaling to 
+extra large desktops. <strong>On mobile phones or screens that are less than 576px wide, the columns will automatically stack 
+on top of each other</strong>:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;row&quot;&gt;<br>&nbsp; &lt;div class=&quot;col-sm-3&quot;&gt;.col-sm-3&lt;/div&gt;<br>&nbsp; &lt;div class=&quot;col-sm-3&quot;&gt;.col-sm-3&lt;/div&gt;<br>&nbsp; &lt;div class=&quot;col-sm-3&quot;&gt;.col-sm-3&lt;/div&gt;<br>&nbsp; 
+  &lt;div class=&quot;col-sm-3&quot;&gt;.col-sm-3&lt;/div&gt;<br>&lt;/div&gt;</div>
+<a target="_blank" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_grid_ex1&stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Two Unequal Responsive Columns</h2>
+<div class="container-fluid" style="margin:8px 0 15px 0;">
+<div class="row test">
+  <div class="col-sm-4">.col-sm-4</div>
+  <div class="col-sm-8">.col-sm-8</div>
+</div>
+</div>
+<p>The following example shows how to get two various-width columns starting at 
+tablets and scaling to large extra desktops:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;row&quot;&gt;<br>&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;.col-sm-4&lt;/div&gt;<br>&nbsp; &lt;div class=&quot;col-sm-8&quot;&gt;.col-sm-8&lt;/div&gt;<br>&lt;/div&gt;</div>
+<a target="_blank" href="http://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_grid_ex3&stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+            <div class="chapter">
+              <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="Bootstrap%20Get%20Started.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="Bootstrap%20Grid%20-%20Small%20Devices.html">Next
+                  Chapter »</a> </div>
+            </div>
+            <hr> </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
